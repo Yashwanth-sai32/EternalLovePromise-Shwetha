@@ -17,31 +17,31 @@ const copyright = document.querySelector(".copy-middle");
 
 // Hiding and displaying the message box when the envelope icon is clicked
 let deletedDiv = null;
-messageBtn.addEventListener("click", function () {
-  if (deletedDiv === null) {
-    deletedDiv = envelopeHide;
-    click.style.display = "none";
-    messageBtn.classList.remove("fa-envelope");
-    messageBtn.classList.add("fa-envelope-open-text");
-    envelopeHide.style.display = "block";
-    angry.style.display = "none";
-    happy.style.display = "none";
-    noLove.style.display = "block";
-    love.style.display = "block";
-    copyright.style.display = "none";
-  } else if (deletedDiv !== null) {
-    deletedDiv = null;
-    click.style.display = "block";
-    messageBtn.classList.remove("fa-envelope-open-text");
-    messageBtn.classList.add("fa-envelope");
-    envelopeHide.style.display = "none";
-    click.style.display = "none";
-    successMessage.style.display = "none";
-    failureMessage.style.display = "none";
-    copyright.style.display = "block";
-    copyright.style.alignItems = "center";
-  }
-});
+// messageBtn.addEventListener("click", function () {
+//   if (deletedDiv === null) {
+//     deletedDiv = envelopeHide;
+//     click.style.display = "none";
+//     messageBtn.classList.remove("fa-envelope");
+//     messageBtn.classList.add("fa-envelope-open-text");
+//     envelopeHide.style.display = "block";
+//     angry.style.display = "none";
+//     happy.style.display = "none";
+//     noLove.style.display = "block";
+//     love.style.display = "block";
+//     copyright.style.display = "none";
+//   } else if (deletedDiv !== null) {
+//     deletedDiv = null;
+//     click.style.display = "block";
+//     messageBtn.classList.remove("fa-envelope-open-text");
+//     messageBtn.classList.add("fa-envelope");
+//     envelopeHide.style.display = "none";
+//     click.style.display = "none";
+//     successMessage.style.display = "none";
+//     failureMessage.style.display = "none";
+//     copyright.style.display = "block";
+//     copyright.style.alignItems = "center";
+//   }
+// });
 
 // Implementing the code for no-love ❌💔
 noLove.addEventListener("click", function () {
